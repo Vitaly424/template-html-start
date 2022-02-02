@@ -1,0 +1,19 @@
+include ../mixins/mixins
+
+block variables
+
+doctype html
+html(lang="ru")
+   head
+      include ../blocks/head
+   body 
+   
+      include ../sections/header.pug
+      
+      main
+         block content  
+         
+      include ../sections/footer.pug
+
+      block scripts
+         script(src = "./assets/js/main.bundle.js")
